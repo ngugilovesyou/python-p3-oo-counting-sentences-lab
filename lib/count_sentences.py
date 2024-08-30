@@ -26,6 +26,6 @@ class MyString:
     value = self._value
     for punc in ['!','?']:
         value = value.replace(punc, '.')
-    sentences = [s for s in value.split('.') if s]
+    sentences = [string for string in value.split('.') if string]
     
     return len(sentences)  
